@@ -1,6 +1,26 @@
-> **This is a performance-optimized fork of [Orange3](https://github.com/biolab/orange3).**
-> It is fully compatible with the original and distributed under the same **GPL-3.0** license.
-> See [PERFORMANCE.md](PERFORMANCE.md) for a complete list of changes.
+# orange3-performance
+
+A performance-optimized fork of [Orange3](https://github.com/biolab/orange3) —
+fully compatible, same workflow format, same add-ons, same GPL-3.0 license.
+
+| What's faster | Speedup |
+|---|---|
+| Instance-ID extraction (Merge Data) | **~12 000×** |
+| Mosaic prior distribution (per render) | **226×** |
+| Heatmap column annotation rendering | **229×** |
+| Selection membership lookup (Line Plot) | **99×** |
+| Subset-ID lookup (Line Plot) | **36×** |
+| Line Plot `add_profiles()` | **3.4×** |
+
+**New in orange3-performance:**
+- Line Plot renders large datasets without crashing (lazy loading by viewport)
+- Scroll-wheel panning + Ctrl-scroll zoom in Line Plot
+- Venn Diagram no longer crashes on string-column datasets
+
+See **[PERFORMANCE.md](PERFORMANCE.md)** for benchmark methodology, before/after
+code, and full test results.
+
+---
 
 ---
 
