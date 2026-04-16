@@ -1,0 +1,24 @@
+  PASS [12.72s]: Bug#1 Function.__gt__ fix
+  PASS [0.02s]: Bug#6 __include_aggregation precedence (smoke)
+  PASS [0.01s]: VirtualTableModel imports cleanly
+  PASS [0.00s]: DuckDBTable imports cleanly
+  PASS [36.89s]: Load 1 TA_15_SM.csv (4.5M rows)
+  PASS [45.25s]: Feature stats on 50k sample (10 numeric cols)
+  PASS [62.32s]: DataSampler / Randomize on 100k rows
+  PASS [36.22s]: Impute on 10k rows
+  PASS [55.43s]: Normalize on 10k rows
+  PASS [57.23s]: PCA on 5k rows (10 numeric cols)
+  PASS [73.47s]: K-Means (3 clusters) on 5k rows
+  PASS [53.35s]: Pearson correlation (6 numeric cols, 5k rows)
+  PASS [44.35s]: SelectRows filter on full 4.5M table
+  PASS [42.62s]: Decision Tree on 10k rows
+
+=======================================================
+  PASSED: 14/14
+  FAILED: 0/14
+
+Slowest tests:
+  73.5s  K-Means (3 clusters) on 5k rows
+  62.3s  DataSampler / Randomize on 100k rows
+  57.2s  PCA on 5k rows (10 numeric cols)
+=======================================================

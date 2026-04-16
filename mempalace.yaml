@@ -1,0 +1,55 @@
+wing: orange3_master
+rooms:
+- name: benchmark
+  description: Files from benchmark/
+  keywords:
+  - benchmark
+  - benchmark
+- name: conda_recipe
+  description: Files from conda-recipe/
+  keywords:
+  - conda_recipe
+  - conda-recipe
+- name: distribute
+  description: Files from distribute/
+  keywords:
+  - distribute
+  - distribute
+- name: documentation
+  description: Files from doc/
+  keywords:
+  - documentation
+  - doc
+- name: i18n
+  description: Files from i18n/
+  keywords:
+  - i18n
+  - i18n
+- name: orange
+  description: Files from Orange/
+  keywords:
+  - orange
+  - orange
+- name: orange3.egg_info
+  description: Files from Orange3.egg-info/
+  keywords:
+  - orange3.egg_info
+  - orange3.egg-info
+- name: scripts
+  description: Files from scripts/
+  keywords:
+  - scripts
+  - scripts
+- name: tutorials
+  description: Files from tutorials/
+  keywords:
+  - tutorials
+  - tutorials
+- name: testing
+  description: Files from tests/
+  keywords:
+  - testing
+  - tests
+- name: general
+  description: Files that don't fit other rooms
+  keywords: []

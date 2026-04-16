@@ -1,0 +1,32 @@
+  PASS [8.08s]: Bug#1 Function.__gt__ fix
+  FAIL: Bug#6 __include_aggregation precedence (smoke)
+  PASS [0.01s]: VirtualTableModel imports cleanly
+  PASS [0.00s]: DuckDBTable imports cleanly
+  PASS [21.63s]: Load 1 TA_15_SM.csv (4.5M rows)
+  PASS [17.83s]: Feature stats on 50k sample (10 numeric cols)
+  PASS [13.46s]: DataSampler / Randomize on 100k rows
+  FAIL: Impute on 10k rows
+  PASS [33.48s]: Normalize on 10k rows
+  FAIL: PCA on 5k rows (10 numeric cols)
+  FAIL: K-Means (3 clusters) on 5k rows
+  FAIL: Pearson correlation (6 numeric cols, 5k rows)
+  PASS [70.30s]: SelectRows filter on full 4.5M table
+  FAIL: Decision Tree on 10k rows
+
+=======================================================
+  PASSED: 8/14
+  FAILED: 6/14
+
+Failed tests:
+  - Bug#6 __include_aggregation precedence (smoke): 'list' object has no attribute 'Count'
+  - Impute on 10k rows: attempt to get argmax of an empty sequence
+  - PCA on 5k rows (10 numeric cols): attempt to get argmax of an empty sequence
+  - K-Means (3 clusters) on 5k rows: attempt to get argmax of an empty sequence
+  - Pearson correlation (6 numeric cols, 5k rows): attempt to get argmax of an empty sequence
+  - Decision Tree on 10k rows: attempt to get argmax of an empty sequence
+
+Slowest tests:
+  70.3s  SelectRows filter on full 4.5M table
+  33.5s  Normalize on 10k rows
+  21.6s  Load 1 TA_15_SM.csv (4.5M rows)
+=======================================================

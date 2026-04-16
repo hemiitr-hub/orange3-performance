@@ -1,0 +1,6 @@
+C:\Users\AG AUDIT\Desktop\orange3-master\Orange\statistics\util.py:384: RuntimeWarning: All-NaN slice encountered
+  return func(x, axis=axis)
+C:\Users\AG AUDIT\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\lib\function_base.py:2897: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+C:\Users\AG AUDIT\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\lib\function_base.py:2898: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
